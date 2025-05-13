@@ -14,7 +14,7 @@ st.write('The name on your Smoothie will be:', name_on_order)
 
 connection_parameters = {
     "account": "PNBFAXK-GQB48216",
-    "user": "chaitanya.yelisetti@teamhgs.com",
+    "user": "yelisetti.chaitanya@teamhgs.com",
     "password": "Chinnu@123456789",
     "role": "SYSADMIN",
     "warehouse": "COMPUTE_WH",
