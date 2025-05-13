@@ -41,3 +41,7 @@ if ingredients_list:
         st.error(f"Error placing order: {e}")
 else:
     st.warning("Please choose at least one ingredient for your smoothie.")
+
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
