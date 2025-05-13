@@ -1,2 +1,2 @@
-snowflake-spark-python
+snowflake-snowpark-python
 streamlit
