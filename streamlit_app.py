@@ -52,7 +52,7 @@ if ingredients_list:
         sf_df=st.dataframe(data=smoothiefroot_response.json(),use_container_width=True)
 
     # Display the chosen ingredients
-    st.write("Your chosen ingredients:", ingredients_string)
+   # st.write("Your chosen ingredients:", ingredients_string)
 
     # Insert the order into Snowflake (add the chosen ingredients and name on the order)
     try:
