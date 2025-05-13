@@ -10,8 +10,16 @@ st.write("Choose the fruits you want in your custom Smoothie")
 name_on_order = st.text_input('Name on Smoothie:')
 st.write('The name on your Smoothie will be:', name_on_order)
 
-# Get the active session from Snowflake
-session = get_active_session()
+connection_parameters = {
+    "account": "PNBFAXK-GQB48216",
+    "user": "chaitanya.yelisetti@teamhgs.com",
+    "password": "Chinnu@123456789",
+    "role": "SYSADMIN",
+    "warehouse": "COMPUTE_WH",
+    "database": "SMOOTHIES",
+    "schema": "PUBLIC"
+}
+session = Session.builder.configs(connection_parameters).create()
 
 # Fetch available fruits from Snowflake
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
